@@ -11,6 +11,19 @@
     <title>My Portfolio</title>
 </head>
 <body>
+    <div class="nav-bar-mobile">
+        <div class="container"><Br><Br>
+            <i class="fa-solid fa-close"></i>
+            <ul><br><Br>
+                <li><a href="">Home</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">Portfolio</a></li>  
+            </ul>
+            <button><span>Hire me</span></button>
+        </div>
+    </div>
+
+
     <header>
         <nav>
             <img src="Images/Logo.png" alt="">
@@ -19,11 +32,12 @@
                 <li><a href="">About me</a></li>
                 <li><a href="">Portfolio</a></li>  
             </ul>
+            <i class="fa-solid fa-bars-staggered"></i>
             <button><span>Hire me</span></button>
         </nav>
     </header>
     <div class="background">
-        <video id="bgVideo" controls preload="true" autoplay loop muted>
+        <video id="bgVideo" controls preload="true" autoplay loop muted plays-inline>
             <source src="Videos/bg.mp4" type="video/mp4" >
         </video> 
         
@@ -33,7 +47,7 @@
          <div class="section-1">
             <div class="section-1-top">
                 <h1>Hi, I am a</h1>
-                <img src="Images/prof-col.jpg" style="width:253px; height: 253px;"  alt="">
+                <img src="Images/prof-col.jpg" class="wow animate__zoomIn" style="width:253px; height: 253px;"  alt="">
             </div>    
             <div class="section-1-bot">
                 <h1><span style="color: #AB0000; font-size: 80px;">Web</span> Developer</h1>
@@ -74,18 +88,47 @@
                 <ul id="ul-left">
                     <li><b>Full Name</li>
                     <li><b>Age</b></li>
-                    <li><b>English, Filipino & Bisaya</b></li>
-                    <li><b>HTML|CSS|JS</b></li>
+                    <li><b>Language</b></li>
+                    <li><b>Phone</b></li>
+                    <li><b>Email</b></li>
+                    <li><b>Address</b></li>
                 </ul>
                 <ul id="ul-right">
-                    <li>: 6 years</li>
-                    <li>: 5 years</li>
-                    <li>: 3 years</li>
-                    <li>: 1 year</li>
+                    <li>: Marco Antiligando</li>
+                    <li>: 27</li>
+                    <li>: English, Filipino and Bisaya</li>
+                    <li>: 0921 848 1810</li>
+                    <li>: martiligando@gmail.com</li>
+                    <li>: Cebu City, Philippines</li>
                 </ul>
             </div>
 
 
+        </div>
+    </div>
+
+
+    <div class="container-3">
+        <h1>Contact</h1>
+        <div class="form">
+            
+            <div class="card-left">
+                <h1>Get in touch</h1>
+                <div class="form-top">
+                    <input id="Name" type="text" placeholder="Name"></input>
+                    <input id="email" type="text" placeholder="Email"></input>
+                    <input id="phone" type="text" placeholder="Phone"></input>
+                    <input id="message" type="text" placeholder="Message"></input>
+                    <button><span>Send Message</span></button>
+                </div>
+            </div>
+            <div class="card-right">
+                <h1>Contact Me</h1><Br><Br>
+                <p><i class="fa-solid fa-house-user">&nbsp;&nbsp;&nbsp;</i><b>Address: </b> Cebu City</p>
+                <p><i class="fa-solid fa-phone">&nbsp;&nbsp;&nbsp;</i><b>Phone: </b> 0921 848 1810</p>
+                <p><i class="fa-solid fa-envelope">&nbsp;&nbsp;&nbsp;</i><b>Email: </b> martiligando@gmail.com</p>
+                <p><i class="fa-solid fa-globe">&nbsp;&nbsp;&nbsp;</i><b>Website: </b>&nbsp;<a href="https://mccoii16.github.io/My-Portfolio.io/">www.marco-portfolio.com</a></p>
+            </div>
         </div>
     </div>
 
@@ -97,6 +140,7 @@
 
     <script src="script.js"></script>
     <script src="/wow.min.js"></script>
+    
     <script>
     new WOW().init();
     </script>
