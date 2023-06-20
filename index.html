@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -14,7 +15,7 @@
     <title>My Portfolio</title>
 </head>
 <body>
-
+<!-- 
     <div id="loader" class="loader">
         <div class="loader-container">
         <div class="wrapper">
@@ -26,16 +27,16 @@
             <div class="shadow"></div>
         </div>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="nav-bar-mobile">
         <div class="container">
             <i id="close-btn" class="fa-solid fa-close"></i>
             <ul><br>
-                <li><a href="">Home</a></li>
+                <li id="nav-home"><a href="">Home</a></li>
                 <li><a href="">About me</a></li>
-                <li><a href="">Portfolio</a></li>  
+                <li id="portfolios"><a href="">Portfolio</a></li>  
             </ul>
             <button><span>Hire me</span></button>
         </div>
@@ -43,38 +44,36 @@
 
 
     <header>
+        
         <nav>
             <img src="Images/Logo.png" alt="">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About me</a></li>
-                <li><a href="">Portfolio</a></li>  
+                <li><a href="#portfolios">Portfolio</a></li>  
             </ul>
             
             <a href="#contact-me"><button><span>Hire me</span></button></a>
             <i id="menu-btn" class="fa-solid fa-bars-staggered"></i>
         </nav>
     </header>
-    <div class="background">
-        <video id="bgVideo" controls preload="true" autoplay loop muted plays-inline>
-            <source src="Videos/bg.mp4" type="video/mp4" >
-        </video> 
-        
-    </div> 
+    <div class="section-1">
+            <div class="background">
+                <video id="bgVideo" controls preload="true" autoplay loop muted plays-inline>
+                    <source src="Videos/bg.mp4" type="video/mp4" >
+                </video> 
+                
+            </div> 
+ 
+            <div class="container-1">
+                
+                    <div class="section-1-top">
+                        <img src="Images/prof-col.jpg" class="wow animate__zoomIn" style="width:253px; height: 253px;"  alt="">
+                        <p>Hey! I'm a Web Developer</p>
+                        <i class="fa-solid fa-angles-down"></i>
+                    </div>      
+            </div>   
     </div>
-    <div class="container-1">
-         <div class="section-1">
-            <div class="section-1-top">
-                <h1>Hi, I am a</h1>
-                <img src="Images/prof-col.jpg" class="wow animate__zoomIn" style="width:253px; height: 253px;"  alt="">
-            </div>    
-            <div class="section-1-bot">
-                <h1><span style="color: #AB0000; font-size: 80px;">Web</span> Developer</h1>
-            </div>
-            <i class="fa-solid fa-angles-down"></i>
-        </div>
-    </div>   
-       
 
     <div class="container-2">
         <div class="section-2">
@@ -128,10 +127,37 @@
   
 
     <div class="container-4">
-        <h1>My Portfolio</h1>
-        <div class="projects">        
-            <div class="elfsight-app-6032f4bb-1cf5-4834-b073-215809526546"></div>
+        <h1 id="portfolios">My Portfolio</h1>
+        <div class="port-buttons">
+            <buttons id="buttons1">All</buttons>
+            <buttons id="buttons2">Video</buttons>
+            <buttons id="buttons3">Photo</buttons>
+            <buttons id="buttons4">Website</buttons>
+            <buttons id="buttons5">Social Media</buttons>
         </div>
+       
+        <div class="port-contents">
+            <div class="port-content-container-1 active">
+                <div class="port-title">Title</div>
+                <div class="port-caption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, fugit!</div>
+                <img src="/Images/prof-col.jpg" alt="">
+            </div>
+            <div class="port-content-container-2 active">
+                <div class="port-title"></div>
+                <div class="port-caption"></div>
+                <img src="/Images/img1.jpg" alt="">
+            </div>
+            <div class="port-content-container-3 active">
+                <div class="port-title"></div>
+                <div class="port-caption"></div>
+                <img src="/Images/prof-col.jpg" alt="">
+            </div>
+        </div>
+       
+       
+        <!-- <div class="projects">        
+            <div class="elfsight-app-6032f4bb-1cf5-4834-b073-215809526546"></div>
+        </div> -->
 
     </div>
 
