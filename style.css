@@ -331,12 +331,28 @@ header{
     transform: translatey(20px);
     transition: .3s;
     cursor: pointer;
+    animation:animate .5s alternate infinite ease;
 }
 
 .fa-solid.fa-angles-down:hover{
     transform: translatey(30px);
     transition: .3s
 }
+@keyframes animate {
+    0% {
+      transform: translatey(1.5px]);
+    }
+  
+    40% {
+      transform: translatey(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: translatey(1.5px);
+      opacity: .4;
+    }
+  }
 
 
 .container-2{
